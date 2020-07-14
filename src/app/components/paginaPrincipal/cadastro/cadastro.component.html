@@ -1,0 +1,116 @@
+<div class="jumbotron  ">
+    <div class="container">
+      <h2 class="display-4">Cadastro de Contatos</h2>
+      
+
+<!-- Material form subscription -->
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Inscreva-se</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5">
+
+        <!-- Form -->
+        <form #form="ngForm" class="text-center" 
+        style="color: #757575;" action="#!" 
+        [formGroup]="cadastroForm" 
+        (ngSubmit)="enviarDados()">
+
+            <p>Cadastre seu contatos e tenha eles sempra à mão.</p>
+
+            <!-- <p>
+                <a href="" target="_blank">See the last newsletter</a>
+            </p> -->
+
+            <!-- Name -->
+            <div class="row">
+                <div class="md-form mt-3 col-6">
+                   <!-- <v-message *ngIf="cadastroForm.get('nome').errors?.required"
+                   text="É preciso digitar um nome"></v-message>
+                   <v-message *ngIf="cadastroForm.get('nome').errors?.minlength"
+                   text="O nome precisa de no mínimo 3 letras"></v-message>
+                   <v-message *ngIf="cadastroForm.get('nome').errors?.maxlength"
+                   text="O número maximo de caracteres é 15"></v-message> -->
+                    <input type="text" 
+                    formControlName="nome" 
+                    class="form-control">
+                    <label >Nome</label>
+                </div>
+                <div class="md-form mt-3 col-6">
+                    <input type="text" 
+                    formControlName="sobreNome" 
+                    class="form-control"
+                    >
+                    <label>Sobrenome</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="md-form mt-3 col-6">
+                    <input type="text" 
+                    formControlName="telefone"
+                     class="form-control"
+                    >
+                    <label >Telefone</label>
+                </div>
+
+                 <!-- E-mai -->
+            <div class="md-form mt-3  col-6">
+                <input type="email" 
+                formControlName="email" 
+                class="form-control"
+               >
+                <label>E-mail</label>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="md-form mt-3 col-4">
+                    <input type="text" 
+                    formControlName="cep" 
+                    class="form-control"
+                    >
+                    <label >CEP</label>
+                </div>
+                <div class="md-form mt-3 col-8">
+                    <input type="text" 
+                    formControlName="localidade" 
+                    class="form-control"
+                  >
+                    <label>Localidade</label>
+                </div>
+
+            </div>
+           
+           
+            <div class="md-form mt-3">
+                <textarea class="form-control" 
+                formControlName="observacoes" 
+                rows="3"
+               ></textarea>
+                <label >Obsrevações</label>
+            </div>
+    
+
+            <!-- Sign in button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" 
+            type="submit" 
+            
+            >Cadastrar</button>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form subscription -->
+
+
+    </div>
+  </div>
+
+  

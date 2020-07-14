@@ -1,0 +1,54 @@
+.container{
+ 
+    margin: 0;
+    padding: 0;
+
+}
+.img-capa{
+    background: url(https://images.pexels.com/photos/3873853/pexels-photo-3873853.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 98.9vw;
+    right: 0;
+
+}
+
+
+.text-capa{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;  
+  
+}
+.text-capa h1{
+    font-size: 140px;
+}
+.text-capa p{
+    font-size: 25px;
+}
+.row{
+ text-align: center;
+    border: 1px solid yellow;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container2{
+    // border: 1px solid blue;
+    width: 98.9vw;
+    height: auto;
+    justify-content: center;
+}
+section{
+   
+    margin: 4%;
+}

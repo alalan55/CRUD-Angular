@@ -1,0 +1,35 @@
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="display-4">Cadastrados</h2>
+      
+      <div class="card" *ngFor="let c of clientes">
+        <!-- <div class="card-header">
+          Featured
+        </div> -->
+        <div class="card-body">
+          <h5 class="card-title">{{c.nome}} {{c.sobreNome}}</h5>
+          <p class="card-text">Telefone: {{c.telefone}} | E-mail: {{c.email}} | Mora em: {{c.localidade}} </p>
+          
+          <div class="observacoes">
+            <h5>Observações:</h5>
+            <p class="card-text">{{c.observacoes}}</p>
+          </div>
+         
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+        <div class="row botoes">
+          <button class="btn btn-warning ml-2"  (click)="editar(c.id)"> Editar</button>
+          <!-- <button class="btn btn-warning ml-2" [routerLink]="['/editar', c.id]"> Editar</button> -->
+          <button class="btn btn-danger ml-2" (click)="deleteCliente(c.id)">Apagar</button>
+         
+        </div>
+       
+      </div>
+
+
+      
+
+
+    </div>
+  </div>
